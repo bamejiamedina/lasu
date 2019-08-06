@@ -1,0 +1,17 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+<% @posts.each do |post| %>
+    <h1><%= link_to "post.title", post %></h1>
+    <p><%= post.content %></p>
+<% end %>
+
+<nav class=”navbar navbar-default navbar-fixed-top”>
+  <div class=”container-fluid”>
+  </div>
+</nav>
+
+</body>
