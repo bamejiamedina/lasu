@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website for Latin American Student Version
 
-Things you may want to cover:
+Rails 5.1.7
 
-* Ruby version
+Bootstrap 4 with jQuery 3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Figaro for ENV variables
