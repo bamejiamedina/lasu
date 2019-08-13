@@ -2,7 +2,23 @@
 	padding-top: 10px;
 }
 
+.lasu-header {
+	background-color: #091930;
+	color: white;
+	padding-bottom: 1px;
+}
 
+.lasu-navbar {
+	background-color: #20344f;
+	border-top: 5px solid white;
+}
 
+.nav-text {
+	color: #65bfd8;
+}
 
+.news-title {
+	padding-top: 10px;
+	text-align: center;
+}
 
