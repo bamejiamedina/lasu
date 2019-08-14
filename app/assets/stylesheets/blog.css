@@ -19,6 +19,15 @@
 
 .welcome-titles {
 	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
+}
+
+.footer-color {
+	background-color: #3f5c6d;
+}
+
+.footer-text {
+	color: #dde0e1;
 }
 
