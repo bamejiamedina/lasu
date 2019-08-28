@@ -25,10 +25,14 @@
 
         <h1 class="my-4">Posts - Sample Template</h1>
 
-        <!-- Blog Post -->
+        <!-- Blog Post - COMMIT NEXT TIME (IMAGE RESIZING)-->
         <% @posts.each do |post| %>
         <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+          <% if post.image_url.present? %>
+            <%= image_tag post.image_url(:thumb).to_s, alt: "image", class: "img-responsive" %>
+          <% else %>
+			<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"> 
+		  <% end %>
           <div class="card-body">
             <h2 class="card-title"><%= post.title %></h2>
             <p class="card-text"><%= post.content %></p>
