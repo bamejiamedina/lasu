@@ -2,7 +2,11 @@
 <p><%= @post.content %></p>
 
 <article class="post">
-	<%= image_tag @post.image.main.url, alt: "image", class: "img-responsive" %>	
+	<% if @post.image_url.present? %>
+	  <%= image_tag @post.image.main.url, alt: "image", class: "img-responsive" %>	
+	<% else %>
+	  <%= image_tag "lasu_logo.png" %>
+	<% end %>
 </article>
 
 <%= link_to "Edit", edit_post_path(@post) %>

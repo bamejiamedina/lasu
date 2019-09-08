@@ -9,7 +9,11 @@
   <% @posts.each do |post| %>
     <div class="col-lg">
       <div class="card mb-4">
-      <img class="card-img-top" src="http://placehold.it/300x200" alt="Card image cap">
+      <% if post.image_url.present? %>
+        <%= image_tag post.image_url(:small).to_s, alt: "image", class: "card-img-top img-responsive" %>
+      <% else %>
+        <%= image_tag "lasu_logo.png", class: "card-img-top img-responsive", height: "300", width: "300"%>
+      <% end %>
         <div class="card-body">
           <h2 class="card-title"><%= post.title %></h2>
           <p class="card-text"><%= post.content %></p>
